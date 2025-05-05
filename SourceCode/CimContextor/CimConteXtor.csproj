@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CimContextor</AssemblyName>
+    <AssemblyOriginatorKeyFile>ENTSOE_CimContextor_KeyFile.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CimContextor</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Addin\CimContextor\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\CimContextor\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'test|AnyCPU' ">
+    <OutputPath>bin\test\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.EA, Version=2.10.238.1, Culture=neutral, PublicKeyToken=d28e1c76302f6a17, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>lib32\Interop.EA.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.AnalyzerUtilities, Version=3.3.8.6701, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.AnalyzerUtilities.3.3.4\lib\netstandard2.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AddIn.cs" />
+    <Compile Include="Configuration\AppSettings.cs" />
+    <Compile Include="Configuration\ClassifierConstraint.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Configuration\Constraint.cs" />
+    <Compile Include="Configuration\DataClassifierConstraint.cs" />
+    <Compile Include="Configuration\DataConstraint.cs" />
+    <Compile Include="Configuration\DataProfiles.cs" />
+    <Compile Include="Configuration\DataQualifier.cs" />
+    <Compile Include="Configuration\Profdata.cs" />
+    <Compile Include="Configuration\Qualifier.cs" />
+    <Compile Include="EditConnectors\CopySuperclassConnectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\CopySuperclassConnectorDialog.Designer.cs">
+      <DependentUpon>CopySuperclassConnectorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\SuperclassConnectorCopier.cs" />
+    <Compile Include="Integrity_Checking\CheckResultsDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Integrity_Checking\CheckResultsDisplay.Designer.cs" />
+    <Compile Include="Integrity_Checking\ValidationCode.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="EditConnectors\EditDuplicateForOptimConnectorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\EditDuplicateForOptimConnectorsForm.Designer.cs">
+      <DependentUpon>EditDuplicateForOptimConnectorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\EditDuplicateForXsdConnectorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\EditDuplicateForXsdConnectorsForm.Designer.cs">
+      <DependentUpon>EditDuplicateForXsdConnectorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\EditSubdivideForOptimConnectorForm .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\EditSubdivideForOptimConnectorForm .Designer.cs">
+      <DependentUpon>EditSubdivideForOptimConnectorForm .cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\EditSubdivideForXsdConnectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\EditSubdivideForXsdConnectorForm.Designer.cs">
+      <DependentUpon>EditSubdivideForXsdConnectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\myComparer.cs" />
+    <Compile Include="EditConnectors\ConstraintManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\ConstraintManager.Designer.cs">
+      <DependentUpon>ConstraintManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\QualifierManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\QualifierManager.Designer.cs">
+      <DependentUpon>QualifierManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorCodes.cs" />
+    <Compile Include="GenerateMessageAssembly\dialselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\dialselect.Designer.cs">
+      <DependentUpon>dialselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\EAClassToXML.cs" />
+    <Compile Include="GenerateMessageAssembly\OrderAssemblyAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\OrderAssemblyAttributes.Designer.cs">
+      <DependentUpon>OrderAssemblyAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\GenerateMessageAssemblyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\GenerateMessageAssemblyForm.Designer.cs">
+      <DependentUpon>GenerateMessageAssemblyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateMessageAssembly\PropertyGrouping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntegrityCheck\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EditConnectors\EditEAClassConnector.cs" />
+    <Compile Include="IsBasedOn\EditAttributeStereotype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\EditAttributeStereotype.Designer.cs">
+      <DependentUpon>EditAttributeStereotype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\EditClassStereotype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\EditClassStereotype.Designer.cs">
+      <DependentUpon>EditClassStereotype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpiredForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpiredForm.Designer.cs">
+      <DependentUpon>ExpiredForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConcatenateDiagram\IBOCleaner\IBOCleaner.cs" />
+    <Compile Include="IsBasedOn\AttributeClassifierConstraintEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeClassifierConstraintEditForm.Designer.cs">
+      <DependentUpon>AttributeClassifierConstraintEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantDefinition.cs" />
+    <Compile Include="IsBasedOn\EnumClassifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\EnumClassifierForm.Designer.cs">
+      <DependentUpon>EnumClassifierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\XMLClassifierConstraint.cs" />
+    <Compile Include="IsBasedOn\AttributeClassifierConstraintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeClassifierConstraintForm.Designer.cs">
+      <DependentUpon>AttributeClassifierConstraintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConcatenateDiagram\ConcatenateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConcatenateDiagram\ConcatenateForm.Designer.cs">
+      <DependentUpon>ConcatenateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\DetailMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option\DetailMessageBox.Designer.cs">
+      <DependentUpon>DetailMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\GlobalIsBasedOn\GlobalIsBasedOnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\GlobalIsBasedOn\GlobalIsBasedOnForm.Designer.cs">
+      <DependentUpon>GlobalIsBasedOnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\GlobalIsBasedOn\GlobalIsBasedOn.cs" />
+    <Compile Include="IsBasedOn\EditAnIsBasedOn.cs" />
+    <Compile Include="IsBasedOn\ClassConstraintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\ClassConstraintForm.Designer.cs">
+      <DependentUpon>ClassConstraintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\EAClassConstraint.cs" />
+    <Compile Include="IsBasedOn\DefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\DefForm.Designer.cs">
+      <DependentUpon>DefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeClassifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeClassifierForm.Designer.cs">
+      <DependentUpon>AttributeClassifierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\EAClassAttributeConstraint.cs" />
+    <Compile Include="IsBasedOn\EAClassAttribute.cs" />
+    <Compile Include="IsBasedOn\EAClass.cs" />
+    <Compile Include="IsBasedOn\AttributeConstraintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeConstraintForm.Designer.cs">
+      <DependentUpon>AttributeConstraintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeCardinalityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\AttributeCardinalityForm.Designer.cs">
+      <DependentUpon>AttributeCardinalityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\IsBasedOnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBasedOn\IsBasedOnForm.Designer.cs">
+      <DependentUpon>IsBasedOnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBasedOn\IsBasedOnClass.cs" />
+    <Compile Include="Option\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\OptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option\OptionForm.Designer.cs">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Option\XMLParser.cs" />
+    <Compile Include="Option\XMLConstraint.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnectors\RoleStorage.cs" />
+    <Compile Include="Integrity_Checking\Severity.cs" />
+    <Compile Include="Utilitaires\CheckEntsoeProfile.cs" />
+    <Compile Include="Utilitaires\CreateProfile.cs" />
+    <Compile Include="Utilitaires\DialSPackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitaires\DialSPackages.Designer.cs">
+      <DependentUpon>DialSPackages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitaires\TimeAnalysis.cs" />
+    <Compile Include="Utilitaires\Validations.cs" />
+    <Compile Include="Utilitaires\Utilitaires.cs" />
+    <Compile Include="Utilities\CeasarCipher.cs" />
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Utilities\copyAllNotes.cs" />
+    <Compile Include="Configuration\DefaultConfiguration.cs" />
+    <Compile Include="Utilities\DialDoubleTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\DialDoubleTree.Designer.cs">
+      <DependentUpon>DialDoubleTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DialSetDescriptionStereotype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\DialSetDescriptionStereotype.Designer.cs">
+      <DependentUpon>DialSetDescriptionStereotype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DialTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\DialTree.Designer.cs">
+      <DependentUpon>DialTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\EAUtilities.cs" />
+    <Compile Include="Utilities\ElementSorter.cs" />
+    <Compile Include="Utilities\FileManager.cs" />
+    <Compile Include="Utilities\GlobalCopy\DialGlobalIBOCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\GlobalCopy\DialGlobalIBOCopy.Designer.cs">
+      <DependentUpon>DialGlobalIBOCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\GlobalCopy\GlobalIBOCopy_Diagramme.cs" />
+    <Compile Include="Utilities\GlobalCopy\GlobalIBOCopy_importexport.cs" />
+    <Compile Include="Utilities\GlobalCopy\DialGCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\GlobalCopy\DialGCopy.Designer.cs">
+      <DependentUpon>DialGCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\GlobalCopy\mapprimitives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\GlobalCopy\mapprimitives.Designer.cs">
+      <DependentUpon>mapprimitives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\GlobalRecoverDatatypes.cs" />
+    <Compile Include="Utilities\ImportConfigurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\ImportConfigurationDialog.Designer.cs">
+      <DependentUpon>ImportConfigurationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\LicenseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\LicenseDialog.Designer.cs">
+      <DependentUpon>LicenseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\LicenseManager.cs" />
+    <Compile Include="Utilities\LoadingIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\LoadingIndicator.Designer.cs">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\MakeAssociationEndsMandatory.cs" />
+    <Compile Include="Utilities\Maniptable.cs" />
+    <Compile Include="Utilities\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\MsgBox.Designer.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="Utilities\UtilitiesConstantDefinition.cs" />
+    <Compile Include="Utilities\WithIBODependency.cs" />
+    <Compile Include="Integrity_Checking\ValidationEntry.cs" />
+    <EmbeddedResource Include="EditConnectors\CopySuperclassConnectorDialog.resx">
+      <DependentUpon>CopySuperclassConnectorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Integrity_Checking\CheckingResults.resx" />
+    <EmbeddedResource Include="Integrity_Checking\CheckResultsDisplay.resx" />
+    <EmbeddedResource Include="EditConnectors\EditDuplicateForOptimConnectorsForm.resx">
+      <DependentUpon>EditDuplicateForOptimConnectorsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditConnectors\EditDuplicateForXsdConnectorsForm.resx">
+      <DependentUpon>EditDuplicateForXsdConnectorsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditConnectors\EditSubdivideForOptimConnectorForm .resx">
+      <DependentUpon>EditSubdivideForOptimConnectorForm .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditConnectors\EditSubdivideForXsdConnectorForm.resx">
+      <DependentUpon>EditSubdivideForXsdConnectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditConnectors\ConstraintManager.resx">
+      <DependentUpon>ConstraintManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditConnectors\QualifierManager.resx">
+      <DependentUpon>QualifierManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateMessageAssembly\dialselect.resx">
+      <DependentUpon>dialselect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateMessageAssembly\GenerateMessageAssemblyForm.resx">
+      <DependentUpon>GenerateMessageAssemblyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateMessageAssembly\OrderAssemblyAttributes.resx">
+      <DependentUpon>OrderAssemblyAttributes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\EditAttributeStereotype.resx">
+      <DependentUpon>EditAttributeStereotype.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpiredForm.resx">
+      <DependentUpon>ExpiredForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\AttributeClassifierConstraintEditForm.resx">
+      <DependentUpon>AttributeClassifierConstraintEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\EditClassStereotype.resx">
+      <DependentUpon>EditClassStereotype.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConcatenateDiagram\ConcatenateForm.resx">
+      <DependentUpon>ConcatenateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\AttributeClassifierConstraintForm.resx">
+      <DependentUpon>AttributeClassifierConstraintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\EnumClassifierForm.resx">
+      <DependentUpon>EnumClassifierForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\DetailMessageBox.resx">
+      <DependentUpon>DetailMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\GlobalIsBasedOn\GlobalIsBasedOnForm.resx">
+      <DependentUpon>GlobalIsBasedOnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\AttributeCardinalityForm.resx">
+      <DependentUpon>AttributeCardinalityForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\AttributeClassifierForm.resx">
+      <DependentUpon>AttributeClassifierForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\AttributeConstraintForm.resx">
+      <DependentUpon>AttributeConstraintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\ClassConstraintForm.resx">
+      <DependentUpon>ClassConstraintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\DefForm.resx">
+      <DependentUpon>DefForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\OptionForm.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBasedOn\IsBasedOnForm.resx">
+      <DependentUpon>IsBasedOnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitaires\DialSPackages.resx">
+      <DependentUpon>DialSPackages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\DialDoubleTree.resx">
+      <DependentUpon>DialDoubleTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\DialSetDescriptionStereotype.resx">
+      <DependentUpon>DialSetDescriptionStereotype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\DialTree.resx">
+      <DependentUpon>DialTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\GlobalCopy\DialGlobalIBOCopy.resx">
+      <DependentUpon>DialGlobalIBOCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\GlobalCopy\DialGCopy.resx">
+      <DependentUpon>DialGCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\GlobalCopy\mapprimitives.resx">
+      <DependentUpon>mapprimitives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\ImportConfigurationDialog.resx">
+      <DependentUpon>ImportConfigurationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\LicenseDialog.resx">
+      <DependentUpon>LicenseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\LoadingIndicator.resx">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\MsgBox.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Release\CimContextor\CimContextor.tlb" />
+    <None Include="bin\Release\CimContextor\CimContextor\InstallRegAddin.bat" />
+    <None Include="bin\Release\CimContextor\CimContextor\newInstallRessources.bat" />
+    <None Include="bin\Release\CimContextor\CimContextor\Ressources\Zamiren-IsBasedOnAddinPublicKey.snk" />
+    <None Include="bin\Release\CimContextor\CimContextor\UnInstallRegAddin.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\CimContextor\BaniŠreMiniLogo.bmp" />
+    <Content Include="bin\Release\CimContextor\CimContextor.dll" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Interop.EA.dll" />
+    <Content Include="bin\Release\CimContextor\CimContextor\RegAsm.exe" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\CimContextor-Config - Copie.xml" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\CimContextor-Config.xml" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\Constraint-list.txt" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\free-folder-icon-14.jpg" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\free-folder-icon-9.jpg" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\IconLogo.ico" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\icons8-dossier-48.png" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\icons8-dossier-ouvert-48.png" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\Licence_CeCILL_V2-en.txt" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\Log.xml" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\VersionInfo - Copier.txt" />
+    <Content Include="bin\Release\CimContextor\CimContextor\Ressources\VersionInfo.txt" />
+    <Content Include="bin\Release\CimContextor\IconLogo.ico" />
+    <Content Include="bin\Release\CimContextor\Interop.EA.dll" />
+    <Content Include="bin\Release\CimContextor\MilieuGauche2.JPG" />
+    <Content Include="entose_logo-h-pos.png" />
+    <EmbeddedResource Include="IsBasedOn\Constraint-list.txt" />
+    <EmbeddedResource Include="Resources\icons8-dossier-48.png" />
+    <EmbeddedResource Include="Resources\icons8-dossier-ouvert-48.png" />
+    <EmbeddedResource Include="Utilities\icons8-dossier-48.png" />
+    <EmbeddedResource Include="Utilities\icons8-dossier-ouvert-48.png" />
+    <EmbeddedResource Include="Configuration\CimContextor_Configuration_Schema.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ENTSOE_CimContextor_KeyFile.pfx" />
+    <None Include="packages.config" />
+    <None Include="Resources\entose_logo-h-pos.png" />
+    <EmbeddedResource Include="Option\entose_logo-h-pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WindowsInstaller">
+      <Guid>{000C1092-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>1033</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

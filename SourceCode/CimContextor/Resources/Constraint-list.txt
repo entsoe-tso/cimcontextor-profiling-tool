@@ -1,0 +1,46 @@
+-- define all different variable and operation valid for all OCL constraints across the modell   
+Def:  AlphanuUpper :set(String)=Set{'A'..'Z',1..9,'-'}
+Def:   CheckCharacters: set(String)=Set{'A'..'Z',1..9}
+Def:   Digital:set(String) = Set{1..9}
+Def:   Alphanu: set(String)=Set{'a'..'z','A'..'Z',1..9}
+Def:   Numeric: set(String)=Set{1..9,'.','-'}
+Def:   isAlphanuUpper(s:String) :Boolean= let ensemble=Set{1..s.size()}  in
+                  s.MinimumLength(1)  and    ensemble->forAll(i | Alphanu->includes(s.substring(i,i)))
+Def: isDigital(s:String):Boolean = let ensemble=Set{1..s.size()}  in
+                  s.MinimumLength(1)  and ensemble->forAll(i | Digital->includes(s.substring(i,i)))
+
+Def: isCheck(s:String):Boolean = let ensemble=Set{1..s.size()}  in
+                 s.MinimumLength(1)  and ensemble->forAll(i | CheckCharacters->includes(s.substring(i,i)))
+
+Def: isAlphanu(s:String):Boolean = let ensemble=Set{1..s.size()}  in
+                  s.MinimumLength(1)  and ensemble->forAll(i | Alphanu->includes(s.substring(i,i)))
+
+Def:   isVersionNumber(s:String)  :Boolean= isDigital(s) and  0<s.size()<=3 and  s.substring(1,2) <> 00
+
+Def: isAlphanuInf35(s:String) :Boolean=isAlphanu(s) and s.size()<=35 -- alphanu string  with less than 35 characters
+
+Def: isNumeric(s:String):Boolean = let ensemble=Set{1..s.size()}  in
+            s.MinimumLength(1)  and ensemble->forAll(i | Numeric>includes(s.substring(i,i)))
+
+Def:  NoLeadingZeros(s:String)  :Boolean= s.MinimumLength(1)  and s.substring(1,1) <> 0  
+	
+--
+
+Def:  Length(L : Integer) : Boolean= self.size()=L
+Def:  MinimumLength(L : Integer) : Boolean = self.size()  >= L
+Def:  MaximumLength(L : Integer) : Boolean = self.size()  <= L
+Def:  TotalDigits(Digits : Integer) : Boolean = self.oclAsType(string).size()-1 = Digits
+Def: MinimumInclusive(F : Float) :Boolean  >= self  F
+
+Def: MaximumInclusive(F : Float) :Boolean = self  <= F
+
+Def: MinimumExclusive(F : Float) :Boolean = self  > F
+
+Def: MaximumExclusive(F : Float) :Boolean= self  <  F
+
+Def: MinimumInclusiveDate(Date : String) :Boolean = self  >= Date
+
+Def: MaximumInclusiveDate(Date : String) :Boolean = self  <= Date
+Def: MinimumExclusiveDate(Date : String) :Boolean = self   >  Date
+Def: MaximumExclusiveDate(Date : String) :Boolean = self   < Date
+Def: Pattern (RegularExpresion : String) : Boolean =  1 = 1

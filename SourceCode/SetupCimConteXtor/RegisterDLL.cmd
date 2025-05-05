@@ -1,0 +1,1 @@
+runas /noprofile /user:mymachine\administrator regasm_install_script.cmd

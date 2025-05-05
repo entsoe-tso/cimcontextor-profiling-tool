@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CimConteXtor", "CimContextor\CimConteXtor.csproj", "{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupCimConteXtor", "SetupCimConteXtor\SetupCimConteXtor.vdproj", "{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		test|Any CPU = test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.test|Any CPU.ActiveCfg = test|Any CPU
+		{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}.test|Any CPU.Build.0 = test|Any CPU
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.Debug|Any CPU.ActiveCfg = Debug
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.Debug|Any CPU.Build.0 = Debug
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.Release|Any CPU.ActiveCfg = Release
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.Release|Any CPU.Build.0 = Release
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.test|Any CPU.ActiveCfg = Debug
+		{B56BE6AF-AF85-48EB-ABCD-873D675ECD4C}.test|Any CPU.Build.0 = Debug
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EAC476E-E110-4A19-B564-78164FD0A371}
+	EndGlobalSection
+EndGlobal

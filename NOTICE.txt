@@ -1,0 +1,5 @@
+Apache CimConteXtor
+
+Copyright 2025 The Apache Software Foundation.
+
+Portions of this software were developed at ENTSO-E (https://www.entsoe.eu/) and Zamiren (https://www.zamiren.fr/index.php/en/).

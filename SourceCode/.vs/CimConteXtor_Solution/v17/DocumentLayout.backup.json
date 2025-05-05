@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\configuration\\configurationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Model\\ModelRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\isbasedon\\eaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\isbasedon\\isbasedonclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\errorcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\editconnectors\\editsubdivideforxsdconnectorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\editconnectors\\editsubdivideforxsdconnectorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\editconnectors\\editduplicateforxsdconnectorsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41F544-D6A8-48C0-9E83-D3C6543A3D04}|CimContextor\\CimConteXtor.csproj|\\\\mac\\box-box\\ea_cim\\cimcontextor_solution\\cimcontextor\\editconnectors\\editduplicateforxsdconnectorsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfigurationManager.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Configuration\\ConfigurationManager.cs",
+              "RelativeDocumentMoniker": "CimContextor\\Configuration\\ConfigurationManager.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Configuration\\ConfigurationManager.cs",
+              "RelativeToolTip": "CimContextor\\Configuration\\ConfigurationManager.cs",
+              "ViewState": "AgIAAAQAAAAALzMzM7MiwBYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:11:20.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IsBasedOnClass.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\IsBasedOn\\IsBasedOnClass.cs",
+              "RelativeDocumentMoniker": "CimContextor\\IsBasedOn\\IsBasedOnClass.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\IsBasedOn\\IsBasedOnClass.cs",
+              "RelativeToolTip": "CimContextor\\IsBasedOn\\IsBasedOnClass.cs",
+              "ViewState": "AgIAAHMAAABAa2ZmZmYUwHkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T14:49:38.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorCodes.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\ErrorCodes.cs",
+              "RelativeDocumentMoniker": "CimContextor\\ErrorCodes.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\ErrorCodes.cs",
+              "RelativeToolTip": "CimContextor\\ErrorCodes.cs",
+              "ViewState": "AgIAACoAAAAAhGZmZmbqvzoAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:03:00.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelRepo.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Model\\ModelRepo.cs",
+              "RelativeDocumentMoniker": "CimContextor\\Model\\ModelRepo.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Model\\ModelRepo.cs",
+              "RelativeToolTip": "CimContextor\\Model\\ModelRepo.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T07:18:56.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EAClass.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\IsBasedOn\\EAClass.cs",
+              "RelativeDocumentMoniker": "CimContextor\\IsBasedOn\\EAClass.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\IsBasedOn\\EAClass.cs",
+              "RelativeToolTip": "CimContextor\\IsBasedOn\\EAClass.cs",
+              "ViewState": "AgIAAFcAAAAA1P///78twGMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:22:58.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Main.cs",
+              "RelativeDocumentMoniker": "CimContextor\\Main.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\Main.cs",
+              "RelativeToolTip": "CimContextor\\Main.cs",
+              "ViewState": "AgIAAB0AAAAAIJqZmdkhwC0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:00:59.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditSubdivideForXsdConnectorForm.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "RelativeDocumentMoniker": "CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "RelativeToolTip": "CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "ViewState": "AgIAAPkGAAAAAAAAAAAgwA4HAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T15:32:30.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditSubdivideForXsdConnectorForm.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "RelativeDocumentMoniker": "CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs [Design]",
+              "RelativeToolTip": "CimContextor\\EditConnectors\\EditSubdivideForXsdConnectorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T15:32:43.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditDuplicateForXsdConnectorsForm.cs",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "RelativeDocumentMoniker": "CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "RelativeToolTip": "CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "ViewState": "AgIAAF8AAAAADWZmZiYhwNAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T15:29:57.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditDuplicateForXsdConnectorsForm.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "RelativeDocumentMoniker": "CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs",
+              "ToolTip": "\\\\Mac\\Box-Box\\EA_CIM\\CimConteXtor_Solution\\CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs [Design]",
+              "RelativeToolTip": "CimContextor\\EditConnectors\\EditDuplicateForXsdConnectorsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T15:31:20.775Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1034,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

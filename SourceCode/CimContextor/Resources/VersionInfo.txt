@@ -1,0 +1,41 @@
+
+/*************************************************************************\
+***************************************************************************
+* Product        CimConteXtor                           june  2021        *
+*                 under the governance of ENTSO-E                         *
+* product originally by Company : Zamiren (Joinville-le-Pont France)      *
+***************************************************************************
+***************************************************************************                     
+* Version : 2.9.26                                                        *
+*   fix bug with roverglobaldatatypes                                     *
+***************************************************************************
+************  known bugs **************************************************   
+*                      *
+*                                                                         *
+***************************************************************************
+***************************************************************************
+*                                                                         *
+*       Credit to:                                                        *
+*    Sebastien Maligue-Clausse   maligueclausse@gmail.com                 *
+*    Andre Maizener   andre.maizener@zamiren.fr                           *
+*    Jean-Luc Sanson   jean-luc.sanson@noos.fr                            *
+*                                                                         *
+*       Contact: +33148854006                                             *
+*       contact@zamiren.fr                                                *
+*                                                                         *
+***************************************************************************
+*                                license                                  *
+***************************************************************************      
+* This software  is ditributed "as-is" without any kind of warranty       *
+*  as an open source software under the term of the license CECILL-B      *
+* published under the supervision  of CEA,INRIA and CNRS from France.     *
+*  A copy of it may be seen activating the licence button                 *
+*                                                                         *
+*  you can get a copy of the source code by mailing your request to       *
+*              getsource@cimcontextor.net                                 *
+***************************************************************************
+\*************************************************************************/
+  
+ 
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<add-inLogs>
+  <logDate date="04-20-2010">
+    <log time="10:58:47" username="SHAD-EEPC\Shad" ConfigSaved="Element:IsBasedOn Value:Checked" />
+    <log time="10:58:47" username="SHAD-EEPC\Shad" ConfigSaved="Element:Confirm Value:Checked" />
+    <log time="10:58:47" username="SHAD-EEPC\Shad" ConfigSaved="Element:Log Value:Unchecked" />
+  </logDate>
+</add-inLogs>

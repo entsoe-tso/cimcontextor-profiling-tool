@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<add-in>
+  <appSettings>
+    <configuration name="IsBasedOn" value="Checked" />
+    <configuration name="Confirm" value="Checked" />
+    <configuration name="Log" value="Unchecked" />
+    <configuration name="Warning" value="Checked" />
+    <configuration name="ConfigColor" value="Default" />
+    <configuration name="QualifyDatatypeEnumCompound" value="Unchecked" />
+    <configuration name="CopyParentElement" value="Unchecked" />
+    <configuration name="EnablePropertyGrouping" value="Checked" />
+    <configuration name="EnableConcreteInheritanceInProfiles" value="Checked" />
+    <configuration name="EnabledIntermediaryInheritance" value="Unchecked" />
+    <configuration name="EnableESMPHierarchy" value="Checked" />
+    <configuration name="EnableCheckAttributeIdentifier" value="Checked" />
+    <configuration name="NavigationEnabled" value="Unchecked" />
+    <configuration name="SimpleProfiling" value="Unchecked" />
+    <configuration name="TimeAnalysis" value="No" />
+    <configuration name="AutomaticChangeOfRoleName" value="Checked" />
+    <configuration name="W13AutomaticAnscesterInProfile" value="Unchecked" />
+  </appSettings>
+  <dataProfiles>
+    <profdata name="ListStereoNamespace" value="Entsoe|ShortCircuit|Operation|Abstract" />
+    <profdata name="EntsoeDataTypesDomain" value="ProfileDomain" />
+    <profdata name="ProfileUMLName" value="profileUML" />
+    <profdata name="ProfilesPackage" value="Profiles" />
+  </dataProfiles>
+  <dataQualifier>
+    <qualifier name="AvaillableToAll" allowedTo="any" />
+    <qualifier name="OnlyAvailableToClass" allowedTo="class" />
+    <qualifier name="OnlyAvailableToDataType" allowedTo="datatype" />
+    <qualifier name="OnlyAvailableToRole" allowedTo="role" />
+    <qualifier name="Reason" allowedTo="any" />
+    <qualifier name="Acknowledgement" allowedTo="any" />
+    <qualifier name="TimeSeries" allowedTo="any" />
+  </dataQualifier>
+  <dataConstraint>
+    <constraint name="testDatatype" type="OCL" allowedTo="datatype" notes="mystringinOCL">
+    </constraint>
+  </dataConstraint>
+  <dataClassifierConstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="For datetime the correct pattern is : \n\r -?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))? \r\n&#xD;&#xA; for TruncationOrReduce DateTime the correct pattern is: \r\n&#xD;&#xA;[1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):([0-5][0-9]Z \r\n">
+	inv: self-&gt;Pattern($P$)
+	</classifierconstraint>
+    <classifierconstraint name="TruncationOrReduced" type="INV" allowedTo="DateTime" variableType="DEFINED" variableList="gYearMonthDayHourMinute,toto" comment="[1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):([0-5][0-9]Z">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="">
+	inv: self-&gt;minInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="">
+	inv: self-&gt;minExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="DateTime" variableType="any" variableList="" comment="For an ennumeration enter values separated with a comma">
+	inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+	</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="the correct pattern is :\n\r -?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?">
+	inv: self-&gt;Pattern($P$)
+	</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="">
+	inv: self-&gt;minInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="For date the correct pattern is : -?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?\r\n">
+	inv: self-&gt;minExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Date" variableType="any" variableList="" comment="For an ennumeration enter values separated with a comma">
+	inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+	</classifierconstraint>
+	<classifierconstraint name="pattern" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="the correct pattern is :\n\r --(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?">
+	inv: self-&gt;Pattern($P$)
+	</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="">
+	inv: self-&gt;minInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="For date the correct pattern is : --(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?\r\n">
+	inv: self-&gt;minExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="MonthDay" variableType="any" variableList="" comment="For an ennumeration enter values separated with a comma">
+	inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+	</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="">
+	inv: self-&gt;minInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="">
+	inv: self-&gt;minExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="For an ennumeration enter values separated with a comma">
+	inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+	</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="Time" variableType="any" variableList="" comment="">
+	inv: self-&gt;Pattern($P$)
+	</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="String" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="string_kind" type="INV" allowedTo="String" variableType="DEFINED" variableList="normalizedString,token,NMTOKEN,Name,NCName,anyURI,ID,IDREF" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="String" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="String" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="String" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="whiteSpace" type="INV" allowedTo="String" variableType="DEFINED" variableList="preserve,replace,collapse" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="String" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="integer_kind" type="INV" allowedTo="Integer" variableType="DEFINED" variableList="long,int,short,byte,unsignedLong,unsignedInt,unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Integer" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="precision" type="INV" allowedTo="Float" variableType="DEFINED" variableList="simple,double" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Float" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Float" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Float" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Float" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Float" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma"> 
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="Float" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Decimal" variableType="Integer" variableList="" comment="">
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="fractionDigits" type="OCL" allowedTo="Decimal" variableType="Integer" variableList="" comment="">
+inv: self-&gt;fractionDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Decimal" variableType="Decimal" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Decimal" variableType="Decimal" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Decimal" variableType="Decimal" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Decimal" variableType="Decimal" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Decimal" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="">
+	inv: self-&gt;minInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxInclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="">
+	inv: self-&gt;minExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="">
+	inv: self-&gt;maxExclusive($N$)
+	</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="For an ennumeration enter values separated with a comma">
+	inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+	</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="Duration" variableType="any" variableList="" comment="">
+	inv: self-&gt;Pattern($P$)
+	</classifierconstraint>
+    <classifierconstraint name="long_kind" type="INV" allowedTo="Long" variableType="DEFINED" variableList="int,short,byte,unsignedLong,unsignedInt,unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Long" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="HexBinary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="HexBinary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="HexBinary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="HexBinary" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="HexBinary" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="Base64Binary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="Base64Binary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="Base64Binary" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="Base64Binary" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Base64Binary" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="ID" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="ID" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="ID" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="ID" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="ID" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="IDREF" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="IDREF" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="IDREF" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="IDREF" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="IDREF" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="int_kind" type="INV" allowedTo="Int" variableType="DEFINED" variableList="short,byte,unsignedInt,unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Int" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="short_kind" type="INV" allowedTo="Short" variableType="DEFINED" variableList="byte,unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Short" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="byte_kind" type="INV" allowedTo="Byte" variableType="DEFINED" variableList="unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="Byte" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="unsignedLong_kind" type="INV" allowedTo="UnsignedLong" variableType="DEFINED" variableList="unsignedInt,unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="UnsignedLong" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="unsignedInt_kind" type="INV" allowedTo="UnsignedInt" variableType="DEFINED" variableList="unsignedShort,unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="UnsignedInt" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="unsignedShort_kind" type="INV" allowedTo="UnsignedShort" variableType="DEFINED" variableList="unsignedByte" comment="">
+choice=$C$
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="UnsignedShort" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="totalDigits" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment=""> 
+inv: self-&gt;TotalDigits($I$)
+</classifierconstraint>
+    <classifierconstraint name="minInclusive" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxInclusive" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxInclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="minExclusive" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;minExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxExclusive" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment="">
+inv: self-&gt;maxExclusive($N$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="UnsignedByte" variableType="Integer" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: self-&gt;let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+    <classifierconstraint name="length" type="OCL" allowedTo="AnyURI" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Length($N$)
+</classifierconstraint>
+    <classifierconstraint name="minLength" type="OCL" allowedTo="AnyURI" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;Minlength($N$)
+</classifierconstraint>
+    <classifierconstraint name="maxLength" type="OCL" allowedTo="AnyURI" variableType="Numeric" variableList="" comment="">
+inv: self-&gt;MaxLength($N$)
+</classifierconstraint>
+    <classifierconstraint name="pattern" type="OCL" allowedTo="AnyURI" variableType="String" variableList="" comment="">
+inv: self-&gt;Pattern($P$)
+</classifierconstraint>
+    <classifierconstraint name="enumeration" type="OCL" allowedTo="AnyURI" variableType="String" variableList="" comment="For an ennumeration enter values separated with a comma">
+inv: let answerlist=Set{$L$} in answerlist-&gt;includes(self)
+</classifierconstraint>
+  </dataClassifierConstraint>
+</add-in>
