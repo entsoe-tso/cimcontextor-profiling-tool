@@ -6,8 +6,6 @@ Although originally, CimConteXtor has been developed to build CIM based profiles
 
 “Enterprise Architect” is a tool is developed and distributed by Sparx Systems.
 
-To mention the CIM Modelling Guideline.
-
 CimConteXtor was originally developed at Zamiren by Sébastien Maligue-Clausse, André Maizener and Jean-Luc Sanson and distributed under CeCILL-B open-source license.
 
 ENTSO-E contributed expanding CimConteXtor and publishes it under the Apache 2.0 license on the ENTSO-E website. The open-source tool development is under governance of ENTSO-E.
